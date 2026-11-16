@@ -27,8 +27,6 @@ const usernameEl = document.querySelector('.username');
 
 let idx = 0;
 
-updateTestimonial();
-
 function updateTestimonial() {
 	const { name, photoUrl, text } = testimonials[idx];
 	imgEl.src = photoUrl;
@@ -44,3 +42,5 @@ function updateTestimonial() {
 		updateTestimonial();
 	}, 5000);
 }
+
+updateTestimonial();
